@@ -11,6 +11,27 @@
     </head>
     <body>
         <div id="app">
+            <div class="container bg-light border-radius mt-5">
+                <div class="row my-5">
+                    <div class="col-12 text-center">
+                        <h1 class="red">Da Guardare</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-unstyled">
+                            <li v-for="(item, index) in daGuardare" class="pb-3 d-flex justify-content-between">
+                                <div :class="(item.done == true) ? 'fatto' : ''">
+                                    {{index + 1}}. {{item.text }}
+                                </div>
+                                <div>
+                                    <button class="btn btn-success btn-sm" @click="visto(index)"><i class="fa-solid fa-check"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

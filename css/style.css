@@ -6,5 +6,20 @@
 
 html body{
     background-color: rgb(32, 32, 107);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.border-radius{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+.red{
+    color: rgb(109, 13, 13);
+}
+
+.fatto{
+    text-decoration: line-through;
 
 }
