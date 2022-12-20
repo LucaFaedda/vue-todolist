@@ -5,7 +5,8 @@ const {
 createApp({
     data(){
         return{
-
+            
+            nuovo: '',
             daGuardare: [
                 {
                     text: 'Mob 100',
@@ -50,6 +51,15 @@ createApp({
         {
             // la dicitura splice serve per indicare la posizione e il numero di elementi da eliminare
             this.daGuardare.splice(index, 1)
+        },
+        aggiungiElemento()
+        {
+            let nuovoElemento ={
+                text: this.nuovo,
+                done: false,
+            }
+            this.daGuardare.push(nuovoElemento)
+            this.nuovo = ''
         }
     },
 
