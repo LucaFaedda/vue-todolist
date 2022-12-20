@@ -23,3 +23,7 @@ html body{
     text-decoration: line-through;
 
 }
+
+.pointer-cursor{
+    cursor: pointer;
+}
