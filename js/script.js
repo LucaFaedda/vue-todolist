@@ -45,7 +45,12 @@ createApp({
             else{
                 fatto.done = true
             } 
-            }
+        },
+        elimina(index)
+        {
+            // la dicitura splice serve per indicare la posizione e il numero di elementi da eliminare
+            this.daGuardare.splice(index, 1)
+        }
     },
 
 }).mount('#app')

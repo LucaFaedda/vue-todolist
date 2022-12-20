@@ -25,7 +25,8 @@
                                     {{index + 1}}. {{item.text }}
                                 </div>
                                 <div>
-                                    <button class="btn btn-success btn-sm" @click="visto(index)"><i class="fa-solid fa-check"></i></button>
+                                    <button class="btn btn-success btn-sm m-2" @click="visto(index)"><i class="fa-solid fa-check"></i></button>
+                                    <button class="btn btn-danger btn-sm" @click="elimina(index)"><i class="fa-solid fa-xmark"></i></button>
                                 </div>
                             </li>
                         </ul>
