@@ -21,8 +21,8 @@
                     <div class="col-12">
                         <ul class="list-unstyled">
                             <!-- qua ci va la lista ciclata con il v-for -->
-                            <li v-for="(item, index) in daGuardare" class="pb-3 d-flex justify-content-between pointer-cursor">
-                                <div :class="(item.done == true) ? 'fatto' : ''" @click="visto(index)">
+                            <li v-for="(item, index) in daGuardare" class="pb-3 d-flex justify-content-between ">
+                                <div :class="(item.done == true) ? 'fatto' : ''" @click="visto(index)" class="pointer-cursor">
                                     {{index + 1}}. {{item.text }}
                                 </div>
                                 <div>
